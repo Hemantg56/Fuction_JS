@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide-Show_Function</title>
+
+</head>
+
+<body>
+
+    <!-- hide and show mate -->
+
+    <p id="set"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, assumenda dicta suscipit nulla numquam tenetur esse iure porro illo odit inventore recusandae, reprehenderit delectus quaerat corrupti, animi deleniti doloremque? Quia.</p>
+
+    <button onclick="de()">Show</button>
+    <button onclick="he()">Hide</button>
+    <button onmouseenter="de()">Show</button>
+    <button onmouseenter="he()">Hide</button>
+
+    <script>
+        p_tag = document.getElementById('set')
+        p_tag.style.display = 'none'
+        console.log(p_tag)
+
+        function he() {
+            p_tag.style.display = 'none '
+        }
+
+        function de() {
+            p_tag.style.display = 'block '
+        }
+    </script>
+
+</body>
+
+</html>

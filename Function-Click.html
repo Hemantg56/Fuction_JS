@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function-Click</title>
+</head>
+
+<body>
+    <!-- koi pan tag ne and koi pan word click kariye tyare  -->
+    <!-- 1. show -->
+    <!-- 2. Remove -->
+    <!-- 3. Effect -->
+    <!-- 4. chages -->
+
+    <h1 id="he"></h1>
+
+    <!-- click se kaam karne ke liye jispe click karke Effect lana hai to vo tag me  -->
+    <!-- attributet ==> onclick attributet use karvanu rahee -->
+    <!-- onclick = " Fuction Name" -->
+
+    <button onclick="he()">Click Hear</button>
+
+    <p onmouseenter="he()">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae expedita officiis aliquam odio distinctio, ipsam culpa assumenda illum accusantium repudiandae animi provident repellendus facilis earum necessitatibus nemo accusamus! Adipisci,
+        eos!
+    </p>
+
+    <h2 id="de"></h2>
+
+    <!-- mouse nu cruser layi jayiye to jispe hover karke Effect lana hai to vo tag me  -->
+    <!-- attributet ==> onmouseenter attributet use karvanu rahee -->
+    <!-- onmouseenter = " Fuction Name" -->
+
+    <button onmouseenter="de()"> Hover Hear </button>
+
+
+    <h1 id="gn">Heding-3</h1>
+    <button onclick="gn()">Click Hear</button>
+    <script>
+        h1_tag = document.getElementById('he')
+
+        function he() {
+            h1_tag.innerHTML = 'Heading-1'
+        }
+
+        h2_tag = document.getElementById('de')
+
+        function de() {
+            h2_tag.innerHTML = 'Heading-2'
+
+        }
+
+        h3 = document.getElementById('gn')
+
+        function gn() {
+            h3.style.color = 'red'
+            h3.tyle.background = '#000'
+            h3.style.width = '30%'
+        }
+    </script>
+</body>
+
+</html>
